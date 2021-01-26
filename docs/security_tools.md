@@ -13,6 +13,8 @@
 - [Mythril](https://github.com/ConsenSys/mythril) - The Swiss army knife for smart contract security.
 - [Slither](https://github.com/trailofbits/slither) - Static analysis framework with detectors for many common Solidity issues. It has taint and value tracking capabilities and is written in Python.
 - [Contract-Library](https://contract-library.com) - Decompiler and security analysis tool for all deployed contracts.
+- [MadMax](https://github.com/nevillegrech/MadMax) - Static analysis tool for gas DoS vulnerabilities.
+- [Gigahorse](https://github.com/nevillegrech/gigahorse-toolchain) - Fast binary lifter and program analysis framework written in Datalog.
 - [Echidna](https://github.com/trailofbits/echidna) - The only available fuzzer for Ethereum software. Uses property testing to generate malicious inputs that break smart contracts.
 - [Manticore](https://github.com/trailofbits/manticore) - Dynamic binary analysis tool with [EVM support](https://asciinema.org/a/haJU2cl0R0Q3jB9wd733LVosL).
 - [Oyente](https://github.com/melonproject/oyente) - Analyze Ethereum code to find common vulnerabilities, based on this [paper](http://www.comp.nus.edu.sg/~loiluu/papers/oyente.pdf).
