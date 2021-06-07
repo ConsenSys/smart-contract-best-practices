@@ -23,7 +23,7 @@ function withdrawBalance() public {
 Since the user's balance is not set to 0 until the very end of the function, the second (and later) invocations will still succeed, and will withdraw the balance over and over again.
 
 !!! Factoid
-    A DAO is a Decentralized Autonomous Organization. Its goal is to codify the rules and decisionmaking apparatus of an organization, eliminating the need for documents and people in governing, creating a structure with decentralized control.
+    A DAO is a Decentralized Autonomous Organization. Its goal is to codify the rules and decision making apparatus of an organization, eliminating the need for documents and people in governing, creating a structure with decentralized control.
 
     On June 17th 2016, [The DAO](https://www.coindesk.com/understanding-dao-hack-journalists) was hacked and 3.6 million Ether ($50 Million) were stolen using the first reentrancy attack.
 
@@ -189,7 +189,7 @@ Above were examples of reentrancy involving the attacker executing malicious cod
 
 ##  Oracle Manipulation
 
-Protocols that rely on external data as inputs (from what's known as an [oracle](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72?source=friends_link&sk=d921a38466df8a9176ed8dd767d8c77d)) automatically execute even if the data is incorrect, due to the nature of smart contracts. If a protocol relies on an oracle that is hacked, deprecated, or has malicious intent, all processes that depend on the oracle can now operate with disasterous affects. 
+Protocols that rely on external data as inputs (from what's known as an [oracle](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72?source=friends_link&sk=d921a38466df8a9176ed8dd767d8c77d)) automatically execute even if the data is incorrect, due to the nature of smart contracts. If a protocol relies on an oracle that is hacked, deprecated, or has malicious intent, all processes that depend on the oracle can now operate with disastrous affects. 
 
 For example:
 
@@ -467,7 +467,7 @@ If given just the right amount of gas, the `Relayer` would complete execution re
 
 An attacker can use this to censor transactions, causing them to fail by sending them with a low amount of gas. This attack is a form of "[griefing](https://en.wikipedia.org/wiki/Griefer)": It doesn't directly benefit the attacker, but causes grief for the victim. A dedicated attacker, willing to consistently spend a small amount of gas could theoretically censor all transactions this way, if they were the first to submit them to `Relayer`.
 
-One way to address this is to implement logic requiring forwarders to provide enough gas to finish the subcall. If the miner tried to conduct the attack in this scenario, the `require` statement would fail and the inner call would revert. A user can specify a minimum gasLimit along with the other data (in this example, typically the `_gasLimit` value would be verified by a signature, but that is ommitted for simplicity in this case).
+One way to address this is to implement logic requiring forwarders to provide enough gas to finish the subcall. If the miner tried to conduct the attack in this scenario, the `require` statement would fail and the inner call would revert. A user can specify a minimum gasLimit along with the other data (in this example, typically the `_gasLimit` value would be verified by a signature, but that is omitted for simplicity in this case).
 
 ```sol
 // contract called by Relayer

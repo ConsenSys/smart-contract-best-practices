@@ -337,7 +337,7 @@ contract Election {
 }
 ```
 
-In this case, the `Registry` contract can make a reentracy attack by calling `Election.vote()` inside `isVoter()`.
+In this case, the `Registry` contract can make a reentrancy attack by calling `Election.vote()` inside `isVoter()`.
 
 !!! Note
     Use [modifiers](https://solidity.readthedocs.io/en/develop/contracts.html#function-modifiers) to replace duplicate condition checks in multiple functions, such as `isOwner()`, otherwise use `require` or `revert` inside the function. This makes your smart contract code more readable and easier to audit.
@@ -352,7 +352,7 @@ All integer division rounds down to the nearest integer. If you need more precis
 
 ```sol
 // bad
-uint x = 5 / 2; // Result is 2, all integer divison rounds DOWN to the nearest integer
+uint x = 5 / 2; // Result is 2, all integer division rounds DOWN to the nearest integer
 ```
 
 Using a multiplier prevents rounding down, this multiplier needs to be accounted for when working with x in the future:
