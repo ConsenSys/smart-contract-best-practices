@@ -252,7 +252,7 @@ For this type of attack, it is **important** to the adversary that the original 
 As with displacement attacks, this is usually done by outbidding Alice's transaction in the gas price auction.
 
 !!! info "Transaction Order Dependence"
-    Transaction Order Dependence is equivalent to race condition in smart contracts. An example, if one function sets the reward percentage, and the withdraw function uses that percentage; then then withdraw transaction can be front-run by a change reward function call, which impacts the amount that will be withdrew eventually.
+    Transaction Order Dependence is equivalent to race condition in smart contracts. An example, if one function sets the reward percentage, and the withdraw function uses that percentage; then withdraw transaction can be front-run by a change reward function call, which impacts the amount that will be withdrew eventually.
 
     See [SWC-114](https://swcregistry.io/docs/SWC-114)
 
